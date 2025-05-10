@@ -8,6 +8,9 @@ class Cafe:
     def __init__(self, name: str) -> None:
         self.name = name
 
+    def __str__(self) -> str:
+        return self.name
+
     def visit_cafe(self, visitor: dict) -> str:
         vaccine = visitor.get("vaccine")
         if not vaccine:
